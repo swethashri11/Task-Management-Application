@@ -18,7 +18,10 @@ A simple, user-friendly **Task Management Application** that allows users to **a
 - **JavaScript** – Handles task management and local storage
 
 ## Usage
-
+Clone this repository:
+   ```sh
+git clone https://github.com/swethashri11/Task-Management-Application.git
+   ```
 Open `index.html` in your browser.
 
 1. Enter a **task name** and **description** in the input fields.
