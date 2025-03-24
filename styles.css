@@ -1,0 +1,127 @@
+body {
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0c2ff, #c2e0ff); 
+    color: #333; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.container {
+    width: 65%;
+    margin: 20px auto; 
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    max-width: 90%; 
+    min-width: 300px; 
+}
+
+h1, h2 {
+    text-align: center;
+    color: #555; 
+    margin-bottom: 25px;
+    font-weight: 600; 
+}
+
+.task-input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.7); 
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #8aacc8; 
+    box-shadow: 0 0 0 0.2rem rgba(138, 172, 200, 0.25);
+}
+
+button {
+    padding: 12px 20px;
+    background: linear-gradient(to right, #8aacc8, #a8c2e0); 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #6b8fa9, #8aa3c0); 
+}
+
+.task-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.7); 
+    border: 1px solid #eee; 
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888; 
+}
+
+.filter-container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.filter-container label {
+    margin-bottom: 8px;
+    font-weight: 500; 
+    color: #555;
+}
+
+.filter-container select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-container select:focus {
+    outline: none;
+    border-color: #8aacc8;
+    box-shadow: 0 0 0 0.2rem rgba(138, 172, 200, 0.25);
+}
+
+.filter-container select option {
+    padding: 10px 15px;
+}
